@@ -1,0 +1,8 @@
+all:
+  children:
+    linux:
+      hosts:
+        54.210.240.67:
+          ansible_user: venkat
+          ansible_password: Venkat
+          ansible_connection: ssh
