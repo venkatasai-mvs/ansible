@@ -1,3 +1,4 @@
+---
 play:
 hosts: all
 tasks:
@@ -6,4 +7,6 @@ tasks:
   script: ./opt/script.sh
 -
   name: "install httpd package"
-  yum: sudo yum install -y httpd
+  yum: 
+    service: httpd
+    state: present
