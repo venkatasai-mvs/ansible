@@ -3,9 +3,6 @@ play:
 hosts: all
 tasks:
 -
-  name: "Execute script"
-  script: ./opt/script.sh
--
   name: "install httpd package"
   yum: 
     service: httpd
